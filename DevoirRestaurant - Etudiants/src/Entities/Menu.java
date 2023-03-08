@@ -37,9 +37,9 @@ public class Menu
     public int CalculerNote()
     {
         int note = 0;
-
+        int note1 = note;
         // A compléter ici
-
+        note = note + note1;
 
         return note;
     }

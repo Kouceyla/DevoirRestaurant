@@ -62,11 +62,13 @@ public class FrmMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
 
                 // A compléter ici
-                if(tblPlats.getSelectedRowCount() == 0){
-                    JOptionPane.showMessageDialog(null,"Séléctionner un plat");
-                } else if (sldNotes.getValue() >=0) {
-
-
+                if (tblPlats.getSelectedRowCount() == 0) {
+                    JOptionPane.showMessageDialog(null, "Séléctionner un plat");
+                }
+                for (int i=0; i<sldNotes.getValue();i++){
+                    if(sldNotes.getValue() == 0){
+                        sldNotes.add(lblNoteMenu);
+                    }
                 }
 
             }
